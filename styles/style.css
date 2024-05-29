@@ -1,0 +1,81 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+:root {
+    --bg-color: #573824;
+    --surface-color: #F0E8C2;
+    --text-color-primary: #291B1A;
+    --tetx-color-secondary: #573A37;
+    --text-color-on-br: #F0E8C2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    font-family: "Alice", serif;
+    background-image: url("../images/img1.png"), linear-gradient(#573a377c, #573a377c);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    padding: 40px 0px;
+}
+
+main {
+    width: 800px;
+    background-color: var(--surface-color);
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+main p {
+    color: var(--tetx-color-secondary);
+    text-align: justify;
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+main h1, h2 {
+    color: var(--text-color-primary);
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+main h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.6em;
+}
+
+section:not(.img) {
+    padding: 0px 20px;
+}
+
+.img {
+    text-align: center;
+    padding-top: 25px;
+}
+
+ul {
+    padding-top: 5px;
+    list-style-position: inside;
+    font-size: 1.2em;
+    color: var(--tetx-color-secondary)
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--text-color-on-br);
+    font-size: 1.2em;
+}
